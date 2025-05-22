@@ -4,26 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quem foi Sócrates?</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IM+Fell+English+SC&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      <h1>Quem foi Sócrates?</h1>
+      <h1 class="titulo-principal">Quem foi Sócrates?</h1>
       <nav>
-        <a href="index.html"> O Julgamento</a> -
+        <a href="index.html"> O Julgamento</a>
         <a href="sobre.html"> Quem foi Sócrates</a>
       </nav>
-      <hr />
     </header>
 
     <main>
       <figure>
         <img
-          src="imgs/quemfoi"
+          class="socratesgrecia"
+          src="imgs/socratesgrecia.jpg"
           alt="Retrato de Sócrates na Grécia Antiga"
-          width="200"
+          width="250"
         />
       </figure>
-      <section id="Quem-foi-Socrates">
+      <section class="introducao" id="Quem-foi-Socrates">
         <p>
           Sócrates foi um dos filósofos mais influentes da história ocidental.
           Nasceu em Atenas, por volta de 469 a.C., e ficou conhecido por seu
@@ -50,10 +57,10 @@
         </p>
       </section>
 
-      <hr />
+      <!-- <hr /> -->
 
-      <section id="frases-filosofos">
-        <h2>Filosofos e suas frases mais famosas</h2>
+      <section class="frases-filosofos" id="frases-filosofos">
+        <h2 class="titulo-frases">Filosofos e suas frases mais famosas</h2>
         <table border="2">
           <caption>
             Esta tabela apresenta filósofos, suas idades aproximadas e suas
@@ -125,6 +132,73 @@
             </tr>
           </tbody>
         </table>
+      </section>
+
+      <section class="filosofos">
+        <div class="filosofo">
+          <img src="imgs/aristoteles.jpg" alt="Aristóteles" />
+          <div class="texto">
+            <h4>ARISTÓTELES</h4>
+            "O todo é maior do que a soma das partes."
+          </div>
+        </div>
+        <div class="filosofo">
+          <img src="imgs/confucio.jpg" alt="Confúcio" />
+          <div class="texto">
+            <h4>CONFÚCIO</h4>
+            "Onde quer que você vá, vá com todo o coração."
+          </div>
+        </div>
+        <div class="filosofo">
+          <img src="imgs/jeanpaul.jpg" alt="Jean-Paul" />
+          <div class="texto">
+            <h4>JEAN PAUL</h4>
+            "O homem está condenado a ser livre."
+          </div>
+        </div>
+        <div class="filosofo">
+          <img src="imgs/kant.jpg" alt="Kant" />
+          <div class="texto">
+            <h4>IMMANUEL KANT</h4>
+            "O céu estrelado acima de mim e a lei moral dentro de mim."
+          </div>
+        </div>
+        <div class="filosofo">
+          <img src="imgs/karlmax.jpg" alt="Karl Marx" />
+          <div class="texto">
+            <h4>KARL MARX</h4>
+            "A história de todas as sociedades até hoje é a história das lutas
+            de classes."
+          </div>
+        </div>
+        <div class="filosofo">
+          <img src="imgs/nietzsche.jpg" alt="Nietzsche" />
+          <div class="texto">
+            <h4>FRIEDRICH NIETZSCHE</h4>
+            "Aquilo que não me mata, me fortalece."
+          </div>
+        </div>
+        <div class="filosofo">
+          <img src="imgs/platao.jpg" alt="Platão" />
+          <div class="texto">
+            <h4>PLATÃO</h4>
+            "Conhece-te a ti mesmo."
+          </div>
+        </div>
+        <div class="filosofo">
+          <img src="imgs/rene.jpg" alt="René Descartes" />
+          <div class="texto">
+            <h4>RENÉ DESCARTES</h4>
+            "Penso, logo existo."
+          </div>
+        </div>
+        <div class="filosofo">
+          <img src="imgs/simone.jpg" alt="Simone de Beauvoir" />
+          <div class="texto">
+            <h4>SIMONE DE BEAUVOIR</h4>
+            "Ninguém nasce mulher: torna-se mulher."
+          </div>
+        </div>
       </section>
     </main>
   </body>

@@ -4,19 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>O Julgamento de Sócrates 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=IM+Fell+English+SC&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>O Julgamento de Sócrates</h1>
+      <h1 class="titulo-principal">O Julgamento de Sócrates</h1>
       <nav>
-        <a href="index.html">O Julgamento</a> -
+        <a href="index.html">O Julgamento</a>
         <a href="sobre.html">Quem foi Sócrates?</a>
-        <hr />
       </nav>
     </header>
 
     <main>
-      <section id="inicio">
+      <section class="introducao" id="inicio">
         <h2>Introdução</h2>
         <p>
           Em 399 a.C., o filósofo Sócrates foi levado a julgamento em Atenas.
@@ -24,18 +30,23 @@
           tornaria um marco na história da filosofia ocidental.
         </p>
         <figure>
-          <img src="imgs/socratesEs.jfif" alt="Sócrates" width="300" />
+          <img
+            class="socrates"
+            src="imgs/SocratesPensando.jpg"
+            alt="Retrato artístico de Sócrates"
+            width="300"
+          />
         </figure>
       </section>
 
       <br />
-      <article>
+      <article class="frases">
         <a href="https://www.pensador.com/autor/socrates/" target="_blank"
           >Frases do Sócrates</a
         >
       </article>
 
-      <section id="acusacoes">
+      <section class="acusacoes" id="acusacoes">
         <h3>As Acusações</h3>
         <h4>Sócrates foi formalmente acusado de:</h4>
         <ul>
@@ -47,20 +58,24 @@
         </ul>
       </section>
 
-      <section id="acusadores">
+      <section class="acusadores" id="acusadores">
         <h4>Seus acusadores foram:</h4>
 
         <ul>
-          <li>Meleto (poeta),</li>
-          <li>Ânito (político influente),</li>
-          <li>Lícon (orador).</li>
+          <li>Meleto (poeta)</li>
+          <li>Ânito (político influente)</li>
+          <li>Lícon (orador)</li>
         </ul>
         <figure>
-          <img src="imgs/tribunal.jfif" alt="Tribunal ateniense" />
+          <img
+            class="tribunal"
+            src="imgs/tribunalf.jpg"
+            alt="Representação do tribunal ateniense"
+          />
         </figure>
       </section>
 
-      <section id="defesa">
+      <section class="defesa" id="defesa">
         <h4>A Defesa</h4>
         <p>
           A defesa de Sócrates, registrada por Platão em "Apologia de Sócrates",
@@ -71,7 +86,7 @@
         </p>
       </section>
 
-      <section id="condenacao">
+      <section class="condenacao" id="condenacao">
         <h4>A Condenação</h4>
         <p>
           Mesmo com uma margem pequena de votos, Sócrates foi considerado
@@ -80,11 +95,16 @@
           Morreu tranquilo, rodeado por discípulos.
         </p>
         <figure>
-          <img src="imgs/morte.jpg" alt="A morte de Sócrates" height="200" />
+          <img
+            class="morte"
+            src="imgs/morteSocrates.jpg"
+            alt="A morte de Sócrates"
+            height="200"
+          />
         </figure>
       </section>
 
-      <section id="legado">
+      <section class="legado" id="legado">
         <h4>Legado</h4>
         <p>
           A postura firme de Sócrates frente à injustiça tornou-se símbolo da
@@ -96,8 +116,8 @@
       </section>
     </main>
 
-    <footer>
-      <p>&COPY; 2025 Rafael Gama - Projeto 1.0</p>
+    <footer class="creditos">
+      <p>&COPY; 2025 Rafael Gama - Projeto 2.0</p>
     </footer>
   </body>
 </html>

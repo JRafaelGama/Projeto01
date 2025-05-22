@@ -1,0 +1,228 @@
+:root {
+  --fundo: #1f1e1b;
+  --texto: #f4f1e8;
+  --titulo: #6d8fa7;
+  --dourado: #c9a86a;
+  --sutis: #3a3a36;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--texto);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "IM Fell English SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--titulo);
+}
+
+body {
+  background-color: var(--fundo);
+}
+header {
+  text-align: center;
+  border-bottom: 1px solid var(--sutis);
+}
+
+.titulo-principal {
+  font-weight: 700;
+  margin: 0.5rem 1rem;
+}
+
+nav > a {
+  border: 2px solid var(--sutis);
+  background-color: var(--dourado);
+  border-radius: 9999px;
+  text-decoration: none;
+  padding: 0.4rem;
+  display: inline-block;
+  width: fit-content;
+  text-transform: uppercase;
+  margin: 0.5rem auto;
+  margin-left: 1rem;
+  color: var(--sutis);
+}
+
+section.introducao {
+  text-align: center;
+}
+
+.socrates,
+.socratesgrecia {
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 20px 10px;
+}
+
+.frases {
+  text-align: center;
+}
+
+.frases > a {
+  border: 2px solid var(--sutis);
+  border-radius: 2000px;
+  font-style: italic;
+  text-decoration: none;
+  background-color: var(--dourado);
+  color: #1f1e1b;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+
+.acusacoes {
+  text-align: center;
+  margin: 1.5rem;
+}
+
+.acusacoes li {
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  list-style: none;
+  margin: 0.2rem;
+}
+
+.acusacoes li:hover {
+  background-color: var(--dourado);
+  transform: scale(1.5);
+  color: #1f1e1b;
+}
+
+.acusacoes > h3 {
+  text-decoration: underline;
+}
+
+h4 {
+  margin: 0.5rem 0.5rem;
+}
+
+.acusadores {
+  text-align: center;
+}
+
+.acusadores li {
+  display: inline-block;
+  border: 2px solid var(--sutis);
+  padding: 1rem;
+  border-radius: 7px;
+  margin-right: 0.5rem;
+  color: #1f1e1b;
+  background-color: var(--dourado);
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+}
+
+.acusadores li:hover {
+  background-color: #e0f7fa;
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tribunal,
+.morte {
+  width: 30rem;
+  height: 20rem;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 20px 10px;
+}
+
+.defesa,
+.condenacao,
+.legado,
+footer {
+  text-align: center;
+  margin: 1rem 1rem;
+}
+
+figure,
+img.socratesgrecia {
+  display: flex;
+  justify-content: center;
+}
+
+.filosofos {
+  margin: 3rem 0rem 1rem 1rem;
+  width: 98%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  overflow-x: auto;
+  padding-right: 50px;
+  scrollbar-width: none;
+}
+
+.filosofos::-webkit-scrollbar {
+  display: none;
+}
+
+.filosofo {
+  flex-shrink: 0;
+  position: relative;
+  flex: 0 0 7%;
+  width: 10%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: flex 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.filosofo:hover {
+  flex: 0 0 35%;
+}
+
+.filosofo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 2px solid var(--sutis);
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.filosofo .texto {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.filosofo:hover .texto {
+  opacity: 1;
+}
+
+.frases-filosofos {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.creditos {
+  border-top: 1px solid var(--sutis);
+}
+
+.creditos > p {
+  margin-top: 0.5rem;
+}
