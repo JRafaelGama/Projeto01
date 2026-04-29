@@ -38,7 +38,7 @@ nav{
     z-index: 1;
 }
 
-a {
+nav a {
     color: #02595d;
     text-decoration: none;
     text-transform: uppercase;
@@ -50,7 +50,7 @@ a {
     background-color: #00CED1;  
 }
 
-a:hover{
+nav a:hover{
     padding: 1.2rem;
     color: #E0E0E0;
     background-color: #02595d;
@@ -128,4 +128,17 @@ figure,img{
 .descricao{
     text-align: justify;
     margin: 1rem;
+}
+#outrasObras a{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 200px;
+    height: 300px;
+}
+
+.descricao:target{
+  background-color: #ffeaa7;
+  border-left: 6px solid #e17055;
+  padding: 15px;
 }
